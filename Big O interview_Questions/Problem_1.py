@@ -1,4 +1,4 @@
-"""main()
+"""1.main()
 {
     i=n
     while(i>1){
@@ -9,7 +9,7 @@
 ##  Here the time complexity will be O(n)
 
 
-"""main()
+"""2.main()
 {
     i=n
     while(i>1){
@@ -20,7 +20,7 @@
 
 ## Here the time complexity will again be O(n)
 
-"""main()
+"""3.main()
 {
     i=n
     while(i>1){
@@ -31,7 +31,7 @@
 
 ## Here the time complexity will again be O(n)
 
-"""main()
+"""4.main()
 {
     i=1                                         ## suppose we take vale of n=10
     while(i<n){                                 ## so inside the loop the values will become 1,2,4,8,16
@@ -42,7 +42,7 @@
 ## Here the time complexity will be O(log2(n))
 
 
-"""main()
+"""5.main()
 {
     i=1                                         ## suppose we take vale of n=10
     while(i<n){                                 ## so here 2*i and 3*i will become 6*i
@@ -55,7 +55,7 @@
 ## Here the time complexity will be O(log2(n))
 
 
-"""main()
+"""6.main()
 {
 i=n
 while(i>1)
@@ -71,7 +71,7 @@ i=i*2
 
 
 
-""" main(){
+"""7.main(){
 
 i=n
 while(i>2){
@@ -86,7 +86,7 @@ i=i^(1/2)
 
 
 
-""" main(){
+"""8.main(){
 
 i=n
 while(i>2){
@@ -99,7 +99,7 @@ i=i^(1/25)
 
 ## Here the time complexity will be O(log25(log2n)
 
-"""main(){
+"""9.main(){
     for(i=1;i<=n;i=i+2)
     {
         for(j=n;j>1;j=j/7)
@@ -113,7 +113,7 @@ i=i^(1/25)
 ## Here the time complexity will be O(n*log7n*log17(log19n)
 
 
-"""main()
+"""10.main()
 {
 for(i=1;i<=n;i=i+5)
 {
