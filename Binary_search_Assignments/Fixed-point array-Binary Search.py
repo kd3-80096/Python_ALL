@@ -18,3 +18,5 @@ def fixedpoint(arr):
 arr = [-10,-5,0,3,7]
 print(fixedpoint(arr))
 
+
+
