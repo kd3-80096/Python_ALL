@@ -3,7 +3,7 @@ def mysqrt(x:int):
     high = x
     while low<=high:
         mid = low + (high-low)//2   ## to find the mid value
-        if mid * mid >x:
+        if mid * mid >x:  ## logic for
             high = mid-1
         elif mid * mid <x:
             low = mid+1
@@ -11,6 +11,6 @@ def mysqrt(x:int):
             return mid
     return high
 
-print(mysqrt(8))
+print(mysqrt(4))
 
 
