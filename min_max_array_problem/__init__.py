@@ -2,7 +2,7 @@
 Input : An array of n numbers
 
 Output : Maximum Element and Minimum Element"""
-
+import time
 
 
 def min_max(arr,low,high):
@@ -34,13 +34,18 @@ def min_max(arr,low,high):
     return (max(max_1,max_2),min(min_1,min_2))  ## for the last return of max and the min values
 
 
+start = time.time()  ## for calculating the time
 arr = [50,90,170,25,15,7,190,4,59]
 low = 0
 high = len(arr)-1
 max_value,min_value = min_max(arr,low,high)
+end = time.time()    ## the end time after completion
+
 
 print("max_value = ",{max_value})
 print("min_value = ",{min_value})
 print("\n")
 print("max_value ={} ".format(max_value))
 print("min_value = {} ".format(min_value))
+
+print("Time taken : ",(end-start)*1000) ## calculating the total time

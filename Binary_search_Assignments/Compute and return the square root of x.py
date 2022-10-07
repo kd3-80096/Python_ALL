@@ -11,6 +11,6 @@ def mysqrt(x:int):
             return mid
     return high
 
-print(mysqrt(4))
+print(mysqrt(25))
 
 

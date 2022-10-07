@@ -12,3 +12,6 @@ def power(base,expo):
         return base * power(base,expo-1)
 
 print(power(2,4))
+
+
+## Time complexity is O(n)
