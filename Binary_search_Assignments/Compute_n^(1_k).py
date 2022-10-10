@@ -59,9 +59,9 @@ def k_element(low,high,n,k):
 
 ## Driver code
 low=0
-high = 9
-n=25
-k=3
+high = 10
+n=10
+k=5
 result = k_element(low,high,n,k)
 print(result)
 
