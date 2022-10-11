@@ -26,7 +26,7 @@ class Solution:
 
 ob1 = Solution()
 first_bad = 4  ## At 4th position the first bad program is there
-op = ob1.firstBadVersion(9)
+op = ob1.firstBadVersion(8)
 print(op)
 
 
