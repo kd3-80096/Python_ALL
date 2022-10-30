@@ -14,3 +14,13 @@ bubble_sort(arr,n)
 print("Bubble_sort =")
 for i in range(0,n):
     print(arr[i],end=" ")
+
+
+
+"""Time Complexity :
+
+Worst Case and Average Case Time Complexity : O(n^2)
+
+Best Case Time Complexity : O(n) [Minimum time when array is already sorted]
+
+Stable : Yes"""

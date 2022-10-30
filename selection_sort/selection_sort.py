@@ -19,6 +19,8 @@ for i in range(0,n):
 
 
 
-""" Time complexity is the O(n^2)"""
+""" Time Complexity - O(n^2)
+
+Space Complexity - O(1)"""
 
 
