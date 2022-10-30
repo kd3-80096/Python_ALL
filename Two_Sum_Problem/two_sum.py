@@ -1,3 +1,5 @@
+""" Addition of two of the elements in the array is equal to one of element in two sum """
+
 
 def two_sum(arr:list[int],target:int)->list[int]:
     dict ={}
