@@ -51,8 +51,8 @@ for i in range(0,n):
 
 
 
-## Overall time complexity of the Heap_sort will be O(n log n)
+## Overall time complexity of the Heap_sort will be O(n log n) for all cases.
 
-## space complexity of the heap_sort will be o(1)
+## space complexity of the heap_sort will be O(1)
 
 
