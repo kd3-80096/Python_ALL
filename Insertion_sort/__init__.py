@@ -2,9 +2,9 @@
 
 def insertionSort(array, n):
   for i in range(1, n):
-    key = array[i]
+    key = array[i]  ##
     j = i - 1  ## j value for previous index we need
-    while j>=0 and key < array[j]:
+    while j>=0 and key < array[j]: ## conditions to satisfy
       array[j+1] = array[j]
       j = j - 1
     array[j+1] = key
