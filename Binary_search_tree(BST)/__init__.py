@@ -1,3 +1,7 @@
+## searching and inserting in the binary search tree
+
+
+
 class binary_search_tree:
     ## Initializing the left,right and root nodes with none values
     def __init__(self,num):
