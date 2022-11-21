@@ -1,6 +1,6 @@
 from abc import ABC,abstractmethod
 
-class Defence(ABC):  ## This is abstract class decelaration
+class Defence(ABC):  ## This is abstract class and we cannot create object of this abstract class.
     @abstractmethod    ## This is the decorater for abstractmethod
     def area(self):
         pass
@@ -8,6 +8,8 @@ class Defence(ABC):  ## This is abstract class decelaration
     def gun(self):   ## We can also have a concrete method in abstract class not necessary to have only abstractmethod
         print("AK-47")
 
+class war(Defence):
+    pass
 
 class Army(Defence):
 
@@ -28,7 +30,6 @@ class Navy(Defence):
 
 
 
-
 a = Army()
 a.area()
 a.gun()
@@ -40,3 +41,7 @@ print()
 c= Navy()
 c.area()
 c.gun()
+
+w = war()  ## we need to pass the abstract method if we want to create the object of class that is inheriting the abstract class
+
+

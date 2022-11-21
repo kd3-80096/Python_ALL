@@ -1,5 +1,4 @@
-################Duck typing is a concept related to dynamic typing############
-
+################ Duck typing is a concept related to dynamic typing ############
 class interpret:
     def execute(self):
         print("This is new editor")
@@ -16,12 +15,29 @@ class lappy:
         ide.execute()
 
 
-ide = anaconda()
+ana = anaconda()
 inter = interpret()
 
 l1=lappy() ## creating constructor of lappy class
 
+## passing the object of the class interpret to laptop method
 
 l1.laptop(inter)  ###type or the class of an object is less important than the methods it defines
 
-l1.laptop(ide)   ### ###type or the class of an object is less important than the methods it defines
+## ## passing the object of the class anaconda to laptop method
+
+l1.laptop(ana)   ### ###type or the class of an object is less important than the methods it defines
+
+
+
+
+
+
+
+
+
+
+
+
+
+

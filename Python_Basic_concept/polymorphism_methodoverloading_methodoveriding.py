@@ -34,11 +34,12 @@ class D:
 
 
 class E(D):
-    def method(self):  ## when same metho name subclass will overide the super-class methods
+    def method(self):  ## when same method name subclass will overide the super-class methods
         print(" Welcome")
 
 e=E()
 e.method()
+
 
 
 

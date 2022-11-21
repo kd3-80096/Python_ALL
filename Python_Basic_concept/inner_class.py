@@ -30,8 +30,10 @@ s1.show()
 
 s1.lappy.open()   ### Here we are calling the object created into the parent class student
 
-l1 = student.laptop()
+l1 = student.laptop()  ## here we are creating the object of inner class by providing the outer class name to call it.
 l1.open()
+
+
 
 
 

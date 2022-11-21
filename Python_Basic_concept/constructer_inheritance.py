@@ -49,10 +49,15 @@ class D:
 d=D()  ### If we create object of sub class it will first try to find __init__ of subclass if not found then it will
          ## call the __init__ of super class
 
+## multilevel inheritance
+
+class Z(c,D):
+    def __init__(self):
+        print("constructer of z")
+z=Z()  ## it will call constructer of z itseld
 
 
-
-############## super method  will allow us to access all the features of parent class#################
+############## super method  will allow us to access all the features of parent class #################
 
 class E:
     def __init__(self):
@@ -77,3 +82,29 @@ class F(E):
         print("This is freature4 module")
 
 f = F()
+
+
+###### multilevel super method ###########
+
+class P:
+    def __init__(self):
+         print("Constructer of P")
+
+
+    def feature1(self):
+        print("This is freature1 module")
+
+class O:
+    def __init__(self):
+         print("Constructer of O")
+
+
+    def feature1(self):
+        print("This is freature1 module")
+
+class X(P,O):
+    def __init__(self):
+        super().__init__()
+        print("constructer of X")
+
+m=X()

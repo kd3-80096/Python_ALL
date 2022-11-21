@@ -39,7 +39,7 @@ class students:
             return False
 
     def __str__(self):  ## Here we created __str__ method to accept integers
-        return '{} {}'.format(self.m1,self.m2)  ##The format() method returns the formatted string in placehlder {}
+        return '{} {}'.format(self.m1,self.m2)  ##The format() method returns the formatted string in placeholder {}
                                                 ## without.format it will return values in tuple form
 
 
