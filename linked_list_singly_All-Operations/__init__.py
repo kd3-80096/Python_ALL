@@ -14,8 +14,8 @@ Removal of an element in a Linked List"""
 
 class Node:
     def __init__(self, data=None, next_node=None):
-        self.data = data
-        self.next_node = next_node
+        self.data = data  ## storing the element
+        self.next_node = next_node   ## storing the address of next element
 
 ## initializing head node
 
@@ -93,6 +93,22 @@ class linked_list:
             iterator = iterator.next_node ##if idx-1 not equal the do iterator.next_node
             count += 1
 
+##  Method Definition to reverse the elements inside the linked list
+
+    def reverse_list(self):
+        curr = self.head
+        next = None
+        prev = None
+
+        while curr is not None:
+            next = curr.next_node
+            curr.next_node = prev
+            prev = curr
+            curr = next
+        self.head = prev
+
+
+
 if __name__  ==  '__main__':
   list_1 = linked_list()
   list_1.insert_at_beginning(45)
@@ -103,7 +119,9 @@ if __name__  ==  '__main__':
   list_1.printll()
   list_1.insert_at_index(37,2)
   list_1.printll()
-
+  list_1.reverse_list()
+  print("Linked List after reversal operation:")
+  list_1.printll()
 
 
 
