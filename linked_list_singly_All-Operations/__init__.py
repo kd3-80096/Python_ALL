@@ -93,6 +93,30 @@ class linked_list:
             iterator = iterator.next_node ##if idx-1 not equal the do iterator.next_node
             count += 1
 
+
+## deletion in singly linked list
+
+    def deletion(self,idx):
+        ## id index is invalid
+        if idx < 0 or idx >= self.count_length():
+            raise Exception("Invalid Index")
+        ## Deletion at the beginning
+        if idx == 0:
+            self.head = self.head.next_node
+            return
+        ## Deletion at any other index
+        count = 0
+        iterator = self.head
+        while iterator:
+            if count == idx-1:
+                iterator.next_node = iterator.next_node.next_node
+                break
+            iterator = iterator.next_node
+            count+=1
+
+
+
+
 ##  Method Definition to reverse the elements inside the linked list
 
     def reverse_list(self):
