@@ -39,6 +39,27 @@ class Doubly_linked_list:
                 iterator = iterator.next
 
 
+## Deleting the nodes in DLL
+
+    def deleteNode(self,deleted_node):
+        ##checking the null condition for the head and the deleted_node
+        if self.head is  None or deleted_node is None:
+            return
+        ## Deleting the first node
+        if self.head == deleted_node:
+            self.head = deleted_node.next
+        ## if the node to be deleted is not the first node Change the pointer
+        if deleted_node.prev is not None:
+            deleted_node.prev.next = deleted_node.next
+        ##  if the node to be deleted is not the last node Change the next pointer
+        if deleted_node.next is not None:
+            deleted_node.next.prev = deleted_node.prev
+        """## if deleted node is the last node
+        if deleted_node.next is None:
+            deleted_node.prev.next = deleted_node.next"""
+
+
+
 if __name__ == '__main__':
     d = Doubly_linked_list()
     d.insert_at_beginning(2)
@@ -47,6 +68,10 @@ if __name__ == '__main__':
     d.insert_at_beginning(10)
     d.insert_at_beginning(12)
     d.printd()
+    d.deleteNode(d.head.next.next.next.next)  ## Deleting the secong node in the linked list
+    print("\n Doubly Linked List after deletion")
+    d.printd()
+
 
 
 
