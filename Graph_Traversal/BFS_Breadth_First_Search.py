@@ -47,6 +47,7 @@ def breadth_first_search(visited,graph,node):
 
 breadth_first_search(visited,graph,'A')
 
-
+## The Time complexity of BFS is O(V + E) when Adjacency List is used and O(V^2) when
+# Adjacency Matrix is used, where V stands for vertices and E stands for edges.
 
 
