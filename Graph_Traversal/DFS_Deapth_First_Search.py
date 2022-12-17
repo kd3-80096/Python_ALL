@@ -32,5 +32,5 @@ depth_first_search(visited,graph,'A')
 
 
 ## The time complexity of the DFS algorithm is O(V+E), where V is the number of vertices and
-E is the number of edges in the graph.
+# E is the number of edges in the graph.
 
