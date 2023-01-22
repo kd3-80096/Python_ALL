@@ -8,9 +8,12 @@ def fib_bottom_up(n):
     bottom_up[2] = 1
     for i in range(3,n+1):
         bottom_up[i] = bottom_up[i-1] + bottom_up[i-2]
+        print(bottom_up[i],end=" ")
+
     return bottom_up[n]
 
-print(fib_bottom_up(2))
+
+print("\n Fibonacci sum is = ",fib_bottom_up(12))
 
 
 
