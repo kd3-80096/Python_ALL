@@ -9,7 +9,7 @@ def rec(arr,total,i):
         return 1
     elif total < 0:  ## if the sum < 0
         return 0 
-    elif i < 0:   ## if the length of the array element i.e i is less than 0
+    elif i < 0:   ## if the length of the array element i.e i is negative index
         return 0
     
     elif total < arr[i]:
